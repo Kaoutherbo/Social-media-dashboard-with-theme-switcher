@@ -141,7 +141,7 @@ body{
             &:hover {
                 cursor: pointer;
                 transform: scale(1.05);
-                
+                background-color: #393954;
            }
            
 
@@ -244,7 +244,7 @@ body{
             &:hover {
                 cursor: pointer;
                 transform: scale(1.05);
-               
+                background-color: #393954;
            }
             & > .left , & > .right{
                 display: flex;
