@@ -188,10 +188,20 @@ body{
             border-top: 5px solid var(--Twitter);
         }
 
-        & > .instagram{
-            border-top-width: 5px;
-            border-top-style:solid;
+        & > .instagram {
+            position: relative;
         }
+
+        & > .instagram::before {
+                content: "";
+                position: absolute;
+                top: -5px; 
+                left: 0;
+                right: 0;
+                height: 5px;
+                background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+                border-radius: 5px 5px 0 0; 
+            }
 
         & > .youtube{
             border-top: 5px solid var(--YouTube);
@@ -303,7 +313,7 @@ body{
         & hr{
             display: block;
             background-color: var(--Very-Dark-Blue);
-            height: 2px;
+            height: 1px;
             width: 100%;
             border-radius: 50%;
             border: none;
